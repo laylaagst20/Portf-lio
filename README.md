@@ -1,6 +1,5 @@
 ###Portfólio
->Descrição
-________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
 <h2>Este é o meu portfólio pessoal, desenvolvido com HTML, CSS e JavaScript. O principal objetivo deste projeto é aplicar na prática todos os conhecimentos adquiridos ao longo do Curso da Alura e da Faculdade de Análise e Desenvolvimento de Sistemas.</h2>
 
 -> Além disso, o portfólio serve como uma vitrine para apresentar meus projetos, habilidades e evolução na área de desenvolvimento web.
@@ -21,6 +20,7 @@ ________________________________________________________________________________
 </ul>
 
 Com este projeto, pratiquei e aprofundei meus conhecimentos em:
+
 Estruturação de páginas web.
 
 Estilização com foco em design responsivo.
