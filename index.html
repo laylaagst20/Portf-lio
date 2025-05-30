@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Outfit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/ydp1sez.css">
+    <link rel="icon" href="png/IconWebSite.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Layla Augusta Page</title>
+    <meta name="description" content="Portfolio de Layla Augusta, desenvolvedora front-end.">
+</head>
+<body>
+    <div class="stars"></div>
+    <header>
+        <nav class="menu"> 
+            <h1 class="typing-container">
+            <img src="png/coffee-cup (2).gif" alt="Ícone de xícara de café">
+                <span class="typing-text" id="typing-text">@Http_dev62</span>
+            </h1>
+
+            <ul class="menu__list">
+                <li ><a class="menu__list-link" href="#section1" aria-label="Link para apresentação">Introduction</a></li>
+                <li ><a class="menu__list-link" href="#section2" aria-label="Link para skills">Skills</a></li>
+                <li ><a class="menu__list-link" href="#section3" aria-label="Link para projetos">Projects</a></li>
+                <li ><a class="menu__list-link" href="#section4" aria-label="Link para contato">Contact</a></li>
+            </ul>
+            <img class="menu__illustration" src="png/Design sem nome (1).png" width="85px" alt="Ilustração do menu">
+        </nav>
+    </header>
+    <main>
+        <!-- Introduction section-->
+        <section id="section1">
+            <div class="left-text">
+                <h2>Hello Stranger!</h2>
+                <p>I’m Layla Augusta</p>
+            </div>
+            <div class="right-text">
+            <p class="section1__introduction">
+                I'm 24 years old, and I'm pursuing two degrees!<br>
+                My first degree is at Cruzeiro do Sul, where I'm studying Systems Analysis and Development, and I'm currently in my 4th semester.
+                The second one is at the University of the People, where I'm studying Computer Science, which I started this year!
+            </p>
+            <a class="btn btn-read-more" href="indexBlog.html">Read More +</a>
+            </div>
+        </section>
+        <!-- Skills section -->
+        <section id="section2">
+            <div class="skills-container">
+                <h2 class="section-title">Skills</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="png/html5.svg" alt="HTML Icon" width="80px">
+                        <h3>HTML</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill fill-60"></div>
+                        </div>
+                        <p>60%</p>
+                    </div>
+                    <div class="card">
+                        <img src="png/css.svg" alt="CSS Icon" width="80px">
+                        <h3>CSS</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill fill-60"></div>
+                        </div>
+                        <p>60%</p>
+                    </div>
+                    <div class="card">
+                        <img src="png/js.svg" alt="JavaScript Icon" width="80px">
+                        <h3>JAVASCRIPT</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill fill-90"></div>
+                        </div>
+                        <p>10%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3">
+            <div class="projects-container">
+              <h2 class="section-title">Projects</h2>
+              <div class="cards">
+                <div class="card">
+                  <a href="https://laylaagst20.github.io/" target="_blank">
+                    <img src="png/Screenshot (2).png" alt="Landing Page Project">
+                  </a>
+                  <h3>Landing Page</h3>
+                  <p>Front-end</p>
+                </div>
+          
+                <div class="card">
+                  <img src="png/Working.png" alt="Project in Construction">
+                  <h3>In Construction</h3>
+                  <p>...</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        <!-- Contact Form -->
+        <section id="section4">
+            <h2 class="section-title">Contact</h2>
+            <form class="contact-form">
+                    <fieldset>
+                        <legend>Contact Me</legend>
+
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="E-mail" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" placeholder="Message"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit">Send</button>
+                    </fieldset>
+                </form>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <ul class="contact__list">
+            <li><a href="https://github.com/laylaagst20" target="_blank" rel="noopener noreferrer"><img src="png/github.png" width="30px"></a></li>
+            <li><a href="https://instagram.com/Http_dev62" target="_blank" rel="noopener noreferrer"><img src="png/instagram.png.svg" width="30px"></a></li>
+            <li><a href="https://linkedin.com/in/laylaaugusta" target="_blank" rel="noopener noreferrer"><img src="png/linkedin.png.svg" width="30px"></a></li>
+        </ul> 
+        <small> Coded by @Http_dev62! &copy; 2025</small> 
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

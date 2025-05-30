@@ -1,0 +1,482 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Paprika&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(10, 25, 77, 0.95) 35%,
+        rgba(43, 65, 141, 0.9) 70%,
+        rgba(96, 125, 139, 0.9) 100% );
+    color: white;   
+    font-family: "playwrite-cc-hu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2rem;
+    color: #38b6ff;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    background-color: #000;
+    color: white; 
+    padding: 10px 20px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    transition-delay: 0s;
+    z-index: 1000;
+}
+
+.menu.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.menu__illustration {
+    width: 50px; 
+    height: auto; 
+    opacity: 1;
+    margin-left: 1px;
+    margin-right: 12px;
+}
+
+.menu__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__list-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu__list-link:hover {
+    color:#0B7595;
+}
+.menu.hide{
+    transform: translateY(-100%);
+    opacity: 0;
+    transition-delay: 0.3s; 
+}
+h1 {
+    font-size: 14px;
+    color: #0B7595;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+h1 img {
+    width: 50px;
+    height: auto;
+}
+.typing-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    font-family: 'Outfit', sans-serif;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
+}
+
+/*=====================introduction ================*/
+
+#section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 80px;
+    gap: 40px;
+}
+.left-text {
+    flex: 1;
+    color: #38b6ff;
+    font-family: "paprika", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal; 
+  }
+  
+.left-text p {
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 35px;
+    margin-top: 10px;
+  }
+  
+.right-text {
+    flex: 1;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    padding: 1.5px;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+/* ==================== Button ==================== */
+.btn-read-more {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 10px;
+    background-color: #00bcd4;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    cursor: pointer;
+
+  }
+  
+.btn-read-more:hover {
+    background-color: #0097a7;
+    transform: translateY(-3px);
+  }
+
+/* ==================== Cards ==================== */
+#section2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 20px 60px;
+    min-height: 100vh;
+    position: relative;
+}
+
+.skills-container,
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* CENTRALIZA todos os elementos filhos, inclusive o título */
+    text-align: center; /* Garante alinhamento do texto */
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 65px; 
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgba(229, 182, 254, 0.161);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.653);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #000; /* fundo preto */
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10px; 
+    margin: 10px 0;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #fff; /* preenchimento branco */
+    border-radius: 10px;
+}
+
+#section3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 20px 60px;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Título à esquerda */
+.left-text {
+    flex: 1;
+}
+
+
+/* Conteúdo à direita */
+.right-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Cards */
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-card {
+    background-color: rgba(189, 232, 252, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.639);
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-card h3 {
+    color: #38b6ff;
+    font-family: "Paprika", sans-serif;
+    font-size: 22px;
+}
+
+.project-card p {
+    color: #ffffff;
+    font-weight: bold;
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.landing-page img,
+.in-construction img {
+    width: 100%;
+    max-width: 350px;
+}
+
+.landing-page p,
+.in-construction p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.in-construction {
+    background: transparent;
+    border: 0.5px solid #011732;
+    color: #000;
+}
+
+
+/* ==================== FUNDO DE ESTRELAS ==================== */
+.stars {
+    position: fixed; /* Fixo na tela, sempre visível */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    background-size: cover;
+    animation: moveStars 50s linear infinite;
+    pointer-events: none; /* não atrapalha interações */
+    z-index: -1; /* Fica atrás de todo o conteúdo */
+}
+
+
+@keyframes moveStars {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -1000px -1000px;
+    }
+}
+
+/*==================== form =================================*/
+#section4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* ocupa a tela toda */
+    padding: 20px;
+    position: relative; /* para manter a camada das estrelas atrás */
+}
+
+.section-title {
+    color: #38b6ff;
+    font-family: "Paprika", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+    max-width: 500px; /* controla a largura */
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form fieldset {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* espaço entre os grupos */
+    width: 100%;
+}
+
+.contact-form legend {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    margin-top: 10px;  
+    padding: 10px;
+    background-color: #00bcd4; 
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    text-align: center; 
+    cursor: pointer;
+    border: none;
+}
+
+.btn-submit:hover {
+    background-color: #0097a7;
+    transform: translateY(-3px);
+}
+
+
+/* ==================== LISTA DE CONTATOS ==================== */
+.contact__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    color: #707070;
+    padding: 20px;
+    gap: 20px;
+}
+/* ==================== FOOTER ==================== */
+footer {
+    display: flex;
+    font-size: 12px; /* muito pequeno */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+@media (max-width: 768px) {
+    #section1 {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .cards, .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu__list {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
